@@ -1,0 +1,31 @@
+{
+  "name": "@tomekkujawski/ai-toolkit",
+  "version": "0.1.0",
+  "description": "AI artifacts for PHP/Symfony teams: skills for code review and architectural audit, plus rules template",
+  "license": "MIT",
+  "author": "Tomasz Kujawski <kujawski.tomek@gmail.com>",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "skills/",
+    "rules/",
+    "install.js",
+    "uninstall.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node install.js",
+    "preuninstall": "node uninstall.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomekkujawski/ai-toolkit.git"
+  }
+}

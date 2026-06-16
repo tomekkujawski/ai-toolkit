@@ -1,0 +1,16 @@
+# Local AI workspace (course materials, not for distribution)
+.claude/
+
+# Node
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Build / packaging
+dist/
+*.tgz
+
+# OS
+.DS_Store
+Thumbs.db
