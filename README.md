@@ -52,10 +52,10 @@ MIT
 > **Note:** Due to npm hook limitations, uninstall requires two manual steps.
 > Tracked in [KNOWN_ISSUES.md](./KNOWN_ISSUES.md), planned fix in 0.2.0.
 
-\`\`\`bash
+```bash
 # Step 1: cleanup files installed by ai-toolkit
 node node_modules/@tomekkujawski/ai-toolkit/uninstall.js
 
 # Step 2: remove package from dependencies
 npm uninstall @tomekkujawski/ai-toolkit
-\`\`\`
+```

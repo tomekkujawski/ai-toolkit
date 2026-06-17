@@ -16,19 +16,19 @@ cannot run arbitrary code on the consumer machine.
 
 **Workaround until 0.2.0:** Run the cleanup script manually before uninstalling:
 
-\`\`\`bash
+```bash
 # Step 1: cleanup files installed by ai-toolkit
 node node_modules/@tomekkujawski/ai-toolkit/uninstall.js
 
 # Step 2: remove package from dependencies
 npm uninstall @tomekkujawski/ai-toolkit
-\`\`\`
+```
 
-**Planned fix in 0.2.0:** Replace \`preuninstall\` hook with a CLI command
-(\`npx @tomekkujawski/ai-toolkit-cleanup\`) so users have an explicit, scriptable
+**Planned fix in 0.2.0:** Replace `preuninstall` hook with a CLI command
+(`npx @tomekkujawski/ai-toolkit-cleanup`) so users have an explicit, scriptable
 way to trigger cleanup.
 
 ### Other minor items
-- \`install.js\` produces no progress indicator for large skill sets (acceptable
+- `install.js` produces no progress indicator for large skill sets (acceptable
   for current 2-skill scope).
-- \`README.md\` lacks a \`code-review-agent\` consumer test scenario walkthrough.
+- `README.md` lacks a `code-review-agent` consumer test scenario walkthrough.
